@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppice;
+
+}
+ 
+section{
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   overflow: hidden;
+   background: #111;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+}
+section h1{
+  font-size: 10em;
+  color: #333;  
+} 
+
+.bub{
+  width: 60px;
+  height: 60px;
+  border: 1px solid white;
+  box-shadow: inset 1px -1px 5px white ;
+  border-radius:50% ;
+  background-color: rgba(255,255,255,0.1);
+  backdrop-filter: blur(2px);
+  position: absolute;
+  bottom: 0;
+}
+
+.bub::before{
+  position: absolute;
+  content: "";
+  background-color: #fff;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  top:15px;
+  left: 13px;
+  box-shadow: 0 0 10px #fff;
+  
+  
+}
+
+/* section span{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: translate(-70%-70%);
+  background: radial-gradient(#fff,transparent);
+  border-radius: 50%;
+} */
+
+.bub.a{
+  left: 5%;
+  animation: animate 9s ease-in-out infinite;
+}
+.bub.b{
+  left: 10%;
+  animation: animate 9.2s linear infinite;
+}
+.bub.c{
+  left: 20%;
+  animation: animate 5.0s ease-in infinite;
+}
+.bub.d{
+  left: 45%;
+  animation: animate 8.5s linear infinite;
+}
+.bub.e{
+  left: 25%;
+  animation: animate 3.8s ease-in infinite;
+}
+.bub.f{
+  left: 65%;
+  animation: animate 5.3s linear infinite;
+}
+.bub.g{
+  left: 120%;
+  animation: animate 5.1s ease-in infinite;
+}
+.bub.h{
+  left: 74%;
+  animation: animate 9.2s linear infinite;
+}
+.bub.i{
+  left: 59%;
+  animation: animate 7.6s ease-in infinite;
+}
+.bub.j{
+  left: 95%;
+  animation: animate 6.9s linear infinite;
+}
+.bub.k{
+  left: 70%;
+   animation: animate 6s ease-in infinite;
+}
+.bub.l{
+  left: 85%;
+   animation: animate 5.1s linear infinite;
+}
+.bub.m{
+  left: 122%;
+   animation: animate 6.7s ease-in infinite;
+}
+.bub.n{
+  left: 55%;
+   animation: animate 8.5s linear infinite;
+}
+.bub.o{
+  left: 66%;
+   animation: animate 3.3s ease-in infinite;
+}
+.bub.p{
+  left: 63%;
+   animation: animate 4.9s linear infinite;
+}
+.bub.q{
+  left: 89%;
+   animation: animate 5.4s ease-in infinite;
+}
+
+section span{
+  position: absolute;
+  bottom: -50px;
+  background: transparent;
+  border-radius: 50%;
+  pointer-events:none;
+  box-shadow: inset 0 0 10px rgba(255,255,255,0.5);
+  animation: animate 9s ease-in infinite;
+
+}
+
+@keyframes animate
+{
+  0%{
+    transform: translateY(0%);
+    opacity: 1;
+
+  }
+  99%{
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(-1200%);
+    opacity: 1;
+  }
+}
